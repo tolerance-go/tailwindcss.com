@@ -3,6 +3,7 @@ import { isObject } from '@/utils/isObject'
 import { castArray } from '@/utils/castArray'
 import clsx from 'clsx'
 import { Heading } from '@/components/Heading'
+import { defaultTransformSelector } from '@/utils/defaultTransformSelector'
 
 function renderProperties(
   properties,
@@ -44,7 +45,7 @@ export const ClassTable = memo(
     preview,
     rowStyle,
     sort = (x) => x,
-    transformSelector = (x) => x.replace(/^\./g, '').replace(/\\/g, ''),
+    transformSelector = defaultTransformSelector,
     transformProperties = ({ properties }) => properties,
     transformValue,
     custom,
