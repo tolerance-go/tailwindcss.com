@@ -20,7 +20,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 const defaultConfig = require('tailwindcss/resolveConfig')(require('tailwindcss/defaultConfig'))
 const Prism = require('prismjs')
-const { getUtilities } = require('./utils')
+const { getUtilities } = require('./getUtilities')
 
 const fallbackLayouts = {
   'src/pages/docs/**/*': ['@/layouts/DocumentationLayout', 'DocumentationLayout'],
