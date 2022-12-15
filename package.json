@@ -2,7 +2,7 @@
   "private": true,
   "name": "tailwindcss.com",
   "scripts": {
-    "clean": "rimraf node_modules .turbo",
+    "clean": "rimraf node_modules .turbo .next",
     "dev-": "next dev",
     "build-": "next build",
     "start": "next start",
